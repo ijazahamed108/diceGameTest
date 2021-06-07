@@ -20,6 +20,8 @@ if(randomNumber1>randomNumber2){
 else if(randomNumber1===randomNumber2){
 
     document.querySelector("h1").innerHTML="Its a Draw 😑";
+    var audio=new Audio("crash.mp3");
+    audio.play();
 }
 else if(randomNumber1<randomNumber2){
     document.querySelector("h1").innerHTML="Player2 won 😀";
